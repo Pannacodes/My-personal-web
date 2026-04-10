@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna's Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <span class="nav-logo">
+        Anna
+        <svg
+          class="nav-bird"
+          viewBox="0 0 44 22"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M2 16 Q11 5 20 11"
+            stroke="#3a8db5"
+            stroke-width="2.2"
+            fill="none"
+            stroke-linecap="round"
+          />
+          <path
+            d="M20 11 Q29 3 38 9"
+            stroke="#3a8db5"
+            stroke-width="2.2"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="clouds clouds-back">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+      <div class="birds">
+        <div class="bird bird-1"></div>
+        <div class="bird bird-2"></div>
+        <div class="bird bird-3"></div>
+        <div class="bird bird-4"></div>
+        <div class="bird bird-5"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello! I'm</p>
+        <div class="hero-name-wrap">
+          <img
+            src="https://www.onlygfx.com/wp-content/uploads/2017/07/blue-watercolor-brush-stroke-20-1-1024x516.png"
+            alt="Blue watercolor brushstroke"
+            class="brush-stroke"
+          />
+          <h1 class="hero-name">Anna</h1>
+        </div>
+        <p class="hero-tagline">
+          an aspiring web developer<br />based in Barcelona
+        </p>
+        <div class="hero-tags">
+          <span class="tag">HTML & CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Creative Thinker</span>
+          <span class="tag">Problem Solver</span>
+        </div>
+        <a href="#projects" class="hero-cta">See my work</a>
+      </div>
+
+      <!-- Sagrada: sits at bottom of hero -->
+      <div class="sagrada-wrap" aria-hidden="true">
+        <img
+          src="./Images/sagradafamilia copy.PNG"
+          alt="painting of sagrada familia"
+          class="sagrada-bg"
+        />
+      </div>
+
+      <div class="clouds clouds-front">
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-label">About me</span>
+            <h2 class="section-title">
+              Curiosity-driven,<br />detail-obsessed
+            </h2>
+            <p>
+              I’m an aspiring web developer with a background in wildlife
+              behaviour and conservation; a slightly unexpected path, right?
+              <br />
+              But really it makes sense: I am very curious, I love to create and
+              enjoy solving issues.
+            </p>
+            <p>
+              While I initally channeled this into research, I discovered that
+              programming allowed to combine logic, structre and creativity into
+              something I could build and shape. And here I am now!
+            </p>
+            <p>
+              When I’m not coding, I’m probably with my cats, cooking, running,
+              walking by the sea or gaming.
+            </p>
+            <div class="about-interests">
+              <span class="interest">✦ Design</span>
+              <span class="interest">✦ Gaming</span>
+              <span class="interest">✦ Travel</span>
+              <span class="interest">✦ Videography</span>
+              <span class="interest">✦ Swimming</span>
+            </div>
+            <p>
+              Oh! Did I mention I speak 5 languages fluently? Take a guess and
+              click on my picture to discover which.
+            </p>
+          </div>
+          <div class="about-visual">
+            <div class="avatar-card" onclick="this.classList.toggle('flipped')">
+              <div class="avatar-inner">
+                <!-- FRONT -->
+                <div class="avatar-front">
+                  <img
+                    src="./Images/anna.jpeg"
+                    alt="Anna smiling"
+                    class="avatar-circle"
+                  />
+                </div>
+
+                <!-- BACK -->
+                <div class="avatar-back">
+                  <div class="flags">
+                    <span>🇫🇷</span>
+                    <span>🇮🇹</span>
+                    <span>🇩🇪</span>
+                    <span>🇪🇸</span>
+                    <span>🇬🇧</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="avatar-deco deco-1"></div>
+              <div class="avatar-deco deco-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Things I've built</h2>
+        <div class="projects-grid">
+          <article class="project-card card-sky">
+            <div class="project-thumb">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/017/197/459/small/coming-soon-icon-symbol-on-transparent-background-free-png.png"
+                alt="Project screenshot"
+                class="thumb-img-1"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Personal Resume Site</h3>
+              <p>
+                A clean, semantic HTML & CSS resume built as Capstone Project 1.
+                Focused on typography and accessible markup.
+              </p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </article>
+          <a
+            href="https://pannacodes.github.io/PurrfectMatch/"
+            target="_blank"
+            class="project-link"
+          >
+            <article class="project-card card-cream">
+              <div class="project-thumb">
+                <img
+                  src="./Images/purrfectmatch.png"
+                  alt="Project screenshot"
+                  class="thumb-img-3"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Purrfect Match</h3>
+                <p>
+                  A playful, fully responsive landing page for a fictional cat
+                  dating app. Built with Bootstrap and optimized for mobile.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a
+            href="https://pannacodes.github.io/PALACIO-SPA/"
+            target="_blank"
+            class="project-link"
+          >
+          <article class="project-card card-lavender">
+            <div class="project-thumb">
+              <img
+                src="./Images/palaciospa.png"
+                alt="Project screenshot"
+                class="thumb-img-3"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Spa Website</h3>
+              <p>
+                An interactive (& imaginary... yes sadly) spa website with UX & UI visual design.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume section" id="resume">
+      <div class="container">
+        <span class="section-label">Resume</span>
+        <h2 class="section-title">Background</h2>
+        <div class="resume-grid">
+          <div class="resume-col">
+            <h3 class="resume-col-title">Education</h3>
+            <div class="resume-item">
+              <span class="resume-year">2026 – now</span>
+              <h4>The Complete Full-Stack Web Development Bootcamp</h4>
+              <p>
+                Diving into HTML, CSS, JavaScript, Node.js, and more. Building
+                interactive, responsive websites and leveling up my coding
+                skills every day.
+              </p>
+            </div>
+            <div class="resume-item">
+              <span class="resume-year">2022 – 2023</span>
+              <h4>MSc Wildlife Conservation</h4>
+              <p>
+                Studied conservation strategies and habitat management. Deepened
+                my data analysis and learned to combine science with practical
+                conservation action.
+              </p>
+            </div>
+            <div class="resume-item">
+              <span class="resume-year">2019 – 2022</span>
+              <h4>BSc (Hons) Animal Behaviour & Welfare</h4>
+              <p>
+                Explored animal behaviour and welfare. Developed observational,
+                analytical, and research skills.
+              </p>
+            </div>
+          </div>
+          <div class="resume-col">
+            <h3 class="resume-col-title">Experience</h3>
+            <div class="resume-item">
+              <span class="resume-year">2025 – now</span>
+              <h4>Sustainability & ESG Specialist</h4>
+              <p>
+                Contribute to the implementation of sustainability initiatives
+                through structured documentation, data organisation, and
+                internal coordination.
+              </p>
+            </div>
+            <div class="resume-item">
+              <span class="resume-year">2024 – 2025</span>
+              <h4>Policy & Science Assistant</h4>
+              <p>
+                Supported reporting, documentation, and knowledge management.
+                Refined web content and briefing materials for diverse
+                audiences.
+              </p>
+            </div>
+            <div class="resume-item">
+              <span class="resume-year">2024 – 2024</span>
+              <h4>Environmental Researcher</h4>
+              <p>
+                Supported EU-funded research project through data collection,
+                organisation, and analysis. Contributed to project
+                communication, documentation and reporting.
+              </p>
+            </div>
+            <div class="resume-item">
+              <span class="resume-year">2022 – 2023</span>
+              <h4>Student Representative</h4>
+              <p>
+                Acted as communication liaison between students and university
+                staff. Supported feedback processes and organised events &
+                merch.
+              </p>
+            </div>
+          </div>
+          <div class="resume-col">
+            <h3 class="resume-col-title">Programming Skills</h3>
+            <div class="skills-list">
+              <div class="skill-row">
+                <span>HTML & CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 10%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <span>Responsive Design</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <span>UI Design</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <span>UX Thinking</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 65%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <span>GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="sea-bg" aria-hidden="true">
+        <img
+          src="./Images/turtle.PNG"
+          alt="sea turtle drawing"
+          class="sea-turtle"
+        />
+        <svg
+          class="wave wave-deep"
+          viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,200 C180,160 360,240 540,200 C720,160 900,240 1080,200 C1260,160 1380,210 1440,200 L1440,320 L0,320 Z"
+            fill="#0a4a6e"
+          />
+        </svg>
+        <svg
+          class="wave wave-mid"
+          viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,220 C200,180 400,260 600,220 C800,180 1000,260 1200,220 C1340,195 1400,230 1440,220 L1440,320 L0,320 Z"
+            fill="#0d6b9a"
+          />
+        </svg>
+        <svg
+          class="wave wave-surface"
+          viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,250 C160,225 320,270 480,250 C640,230 800,270 960,250 C1120,230 1300,262 1440,248 L1440,320 L0,320 Z"
+            fill="#1a8cbf"
+          />
+        </svg>
+        <svg
+          class="wave wave-foam"
+          viewBox="0 0 1440 80"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,40 C80,28 160,52 240,40 C320,28 400,52 480,40 C560,28 640,52 720,40 C800,28 880,52 960,40 C1040,28 1120,52 1200,40 C1280,28 1360,48 1440,40"
+            stroke="rgba(255,255,255,0.55)"
+            stroke-width="2.5"
+            fill="none"
+          />
+          <path
+            d="M0,55 C100,44 200,62 300,55 C400,48 500,62 600,55 C700,48 800,62 900,55 C1000,48 1100,62 1200,55 C1300,48 1380,58 1440,55"
+            stroke="rgba(255,255,255,0.3)"
+            stroke-width="1.5"
+            fill="none"
+          />
+        </svg>
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+      </div>
+      <div class="container contact-inner">
+        <span class="section-label sea-label">Contact</span>
+        <h2 class="section-title sea-title">Say hi!</h2>
+        <p class="contact-sub">
+          I'm always open to new project ideas, collaborations, or just a
+          friendly chat!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:pili.anna99@gmail.com" class="contact-link"
+            ><span class="contact-icon">✉️</span>pili.anna99@gmail.com</a
+          >
+          <a
+            href="https://github.com/Pannacodes"
+            class="contact-link"
+            target="_blank"
+            ><span class="contact-icon"
+              ><img
+                src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
+                alt="GitHub symbol"
+                class="github-icon" /></span
+            >github.com/Pannacodes</a
+          >
+          <a
+            href="https://www.linkedin.com/in/anna-pili-8881a5246/"
+            class="contact-link"
+            target="_blank"
+            ><span class="contact-icon"
+              ><img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
+                alt="linkedin icon"
+                class="linkedin-icon" /></span
+            >linkedin.com/in/anna</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Anna &nbsp;·&nbsp; Designed & built with love</p>
+    </footer>
+  </body>
+</html>
